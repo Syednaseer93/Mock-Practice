@@ -1,0 +1,21 @@
+package random;
+
+public class RemoveWhiteSpaces {
+
+	public static void main(String[] args) {
+		String str="   hi   i   m   Naseer  ";
+		int count=0;
+		for(int i=0;i<=str.length()-1;i++) {
+			if(!(str.charAt(i)==' ')) {
+				
+				System.out.print(str.charAt(i));
+			}
+			else if(str.charAt(i)==' ')
+			{
+				count++;		
+			}
+		}
+		System.out.println("\nTotal number of white spaces removed: "+count);
+	}
+
+}
